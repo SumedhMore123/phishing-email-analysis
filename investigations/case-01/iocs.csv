@@ -1,1 +1,9 @@
 type,value,description
+Domain,etekno.xyz,Return-Path domain
+IP,209.85.167.226,Received-from header hop
+IP,2.16.107.24,IP flagged in ANY.RUN report
+URL,https://t.co/yuxfZm8KPg?amp=1,Initial shortened URL from UPDATE ACCOUNT NOW button
+URL,https://bit.ly/2TiRpyj,First observed redirect destination
+URL,https://www.linkedin.com/slink?code=enmd-V3,Final observed URL after redirect chain
+SHA256,cc6f1a04b10bcb168aeec8d870b97bd7c20fc161e8310b5bce1af8ed420e2c24,SHA-256 of Payment-updateid.pdf
+File,Payment-updateid.pdf,Suspicious PDF attachment
