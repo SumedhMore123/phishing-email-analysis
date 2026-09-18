@@ -1,0 +1,10 @@
+type,value,description
+Email,info@mutawamarine.com,Sender address
+Email,info.mutawamarine@mail.com,Reply-To address
+Domain,mutawamarine.com,Sender domain
+Domain,mail.com,Reply-To domain
+IP,192.119.71.157,Originating IP identified during lab investigation
+File,SWT_#09674321____PDF___CAB,Email attachment
+FileType,RAR,Actual attachment file type identified by VirusTotal
+SHA256,2e91c533615a9bb8929ac4bb76707b2444597ce063d84a4b33525e25074fff3f,SHA-256 of attachment
+Reference,09674321,Transfer reference number
