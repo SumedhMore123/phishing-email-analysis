@@ -34,6 +34,7 @@ Detection & Incident Response
 | Case | Description | Status |
 |---|---|---|
 | [Case 01](investigations/case-01/report.md) | Netflix-themed account/payment update phishing investigation | In progress |
+| [Case 02](investigations/case-02/report.md) | Suspicious SWIFT transfer email and malicious attachment investigation | In progress |
 
 ## Defensive Knowledge
 
