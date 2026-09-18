@@ -35,11 +35,19 @@ Detection & Incident Response
 |---|---|---|
 | [Case 01](investigations/case-01/report.md) | Netflix-themed account/payment update phishing investigation | In progress |
 
+## Defensive Knowledge
+
+| Resource | Coverage |
+|---|---|
+| [Phishing Prevention](resources/phishing-prevention.md) | SPF, DKIM, DMARC, S/MIME, SMTP/IMF analysis, Wireshark, attachment analysis, and phishing prevention concepts |
+
 ## Tools & Techniques
 
 - Thunderbird Message Source
 - ANY.RUN
+- Wireshark
 - Email header analysis
+- SMTP / IMF traffic analysis
 - URL redirect analysis
 - Threat intelligence and IOC enrichment
 - Splunk detection queries (planned)
