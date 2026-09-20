@@ -1,0 +1,13 @@
+type,value,description
+Email,Accounts.Payable@groupmarketingonline.icu,Phishing sender address
+Domain,groupmarketingonline.icu,Sender domain
+Domain,kennaroads.buzz,Root domain of redirect URL found within the attachment
+Service,Microsoft,Impersonated login provider
+File,Update365.zip,Exposed phishing-kit archive
+SHA256,ba3c15267393419eb08c7b2652b8b6b39b406ef300ae8a18fee4d16b19ac9686,Phishing-kit archive SHA-256
+ThreatCategory,Phishing,VirusTotal classification
+ThreatCategory,Trojan,VirusTotal classification
+Count,49,Files contained within the phishing-kit archive
+Email,michael.ascot@swiftspend.finance,User who submitted credentials more than once
+Email,m3npat@yandex.com,Credential-collection address in submit.php
+User,William McClean,Recipient of Quote for Services Rendered email
