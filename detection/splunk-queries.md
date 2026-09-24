@@ -43,7 +43,7 @@ index=email
 ```spl
 index=email
 | eval name=lower(attachment_name)
-| where match(name, "\\.(zip|rar|7z|iso|img|js|vbs|scr|exe)$")
+| where match(name, "\.(zip|rar|7z|iso|img|js|vbs|scr|exe)$")
 | table _time sender recipient subject attachment_name attachment_sha256
 ```
 
