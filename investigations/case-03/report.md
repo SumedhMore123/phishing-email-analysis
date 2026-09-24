@@ -1,5 +1,7 @@
 # Case 03 — SwiftSpend Financial Phishing Campaign
 
+**Case status:** ✅ Complete
+
 ## 1. Investigation Summary
 
 A multi-user phishing incident was escalated after employees at SwiftSpend Financial reported suspicious emails and some users lost access to their accounts after submitting credentials.
@@ -31,7 +33,7 @@ One investigated message regarding a **Quote for Services Rendered** was receive
 William McClean
 ```
 
-### Adversary sender
+### Phishing sender
 
 The phishing emails were sent using:
 
