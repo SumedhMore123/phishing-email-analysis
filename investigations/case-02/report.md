@@ -1,5 +1,7 @@
 # Case 02 — Suspicious SWIFT Transfer Email
 
+**Case status:** ✅ Complete
+
 ## 1. Investigation Summary
 
 A sales executive at Greenholt PLC reported a suspicious email received from a known customer. The message requested a money transfer-related action and included an unsolicited attachment, which was inconsistent with the customer's normal communication style.
