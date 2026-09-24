@@ -1,5 +1,7 @@
 # Case 01 — Netflix-Themed Phishing Email & Attachment Analysis
 
+**Case status:** ✅ Complete
+
 ## 1. Investigation Summary
 
 A suspicious email reported by an end user was analyzed from a Level 1 SOC analyst perspective. The message impersonates **Netflix** and uses an account/payment issue to encourage the recipient to act.
@@ -100,7 +102,9 @@ Potentially Bad Traffic process: svchost.exe
 
 These observations should be treated as sandbox evidence associated with the sample and investigated further rather than used alone for attribution.
 
-## 6. Attachment Analysis — Excel Sample
+## 6. Additional Attachment Analysis — Excel Sample
+
+This Excel sample was analyzed separately within the same controlled training scenario and is kept distinct from the PDF evidence above to avoid conflating two artifacts.
 
 A separate ANY.RUN sandbox analysis in the phishing-analysis training scenario examined an Excel attachment.
 
