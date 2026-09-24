@@ -1,6 +1,8 @@
-# Phishing Email Analysis — Prevention & Email Security Notes
+# Phishing Prevention & Email Security
 
-This section captures defensive concepts practiced in the TryHackMe **Phishing Prevention** room and connects them to the SOC investigation workflow used in this repository.
+This section captures defensive concepts practiced during security training and connects them to the phishing investigations in this repository.
+
+---
 
 ## Topics Covered
 
@@ -11,16 +13,27 @@ This section captures defensive concepts practiced in the TryHackMe **Phishing P
 - **SMTP response analysis** — using response codes and message text to identify rejected or blocked mail
 - **Wireshark SMTP analysis** — filtering and examining SMTP traffic in packet captures
 - **IMF (Internet Message Format)** — examining sender, recipient, content, and attachment metadata
-- **Attachment analysis** — identifying potentially malicious files and their encoding
-- **Phishing prevention controls** — reducing delivery and user-impact risk through layered email security controls
+- **Attachment analysis** — identifying potentially malicious files and their characteristics
+- **Layered phishing prevention** — reducing delivery and user-impact risk through multiple controls
+
+---
 
 ## SOC Relevance
 
-These topics complement the investigation workflow in `investigations/`.
+During phishing triage, SPF, DKIM, and DMARC results can provide evidence about sender authenticity and domain alignment. SMTP response codes and packet-level analysis can help determine how a message was handled. IMF analysis provides visibility into message metadata and attachments.
 
-During phishing triage, email authentication results such as SPF, DKIM, and DMARC can provide useful evidence about sender authenticity and domain alignment. SMTP response codes and packet-level analysis can help determine whether messages were accepted, rejected, or blocked. IMF analysis provides visibility into message metadata and attachments.
+These signals should be correlated with:
 
-The objective is not to treat one signal as conclusive. A SOC analyst should correlate authentication results, header fields, message content, URLs, attachments, threat-intelligence findings, and endpoint/network telemetry before reaching a final assessment.
+- Sender / Reply-To information
+- Message content
+- URLs
+- Attachment characteristics
+- Threat-intelligence results
+- Endpoint and identity telemetry
+
+No single authentication or reputation result should be treated as conclusive on its own.
+
+---
 
 ## Practical Investigation Workflow
 
@@ -40,6 +53,8 @@ IOC Extraction
 Detection & Response
 ```
 
+---
+
 ## Example Evidence Types
 
 | Evidence source | Useful investigation data |
@@ -48,8 +63,10 @@ Detection & Response
 | SMTP response | Delivery/rejection status and server response text |
 | Wireshark PCAP | SMTP conversations, response codes, IPs, message flow |
 | IMF | Sender, recipient, MIME structure, attachment metadata |
-| Attachment analysis | Filename, hash, execution behavior, network indicators |
+| Attachment analysis | Filename, hash, file type, execution behavior, network indicators |
+
+---
 
 ## Training Note
 
-The prevention concepts in this document are based on hands-on security training and are used here to support the practical phishing investigations documented elsewhere in the repository.
+The concepts in this document are used as defensive foundations for the practical phishing investigations documented elsewhere in the repository. Production controls should be implemented and tuned according to organizational policy and environment.
